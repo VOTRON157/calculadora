@@ -44,11 +44,15 @@ namespace Calculadora
             this.igual = new System.Windows.Forms.Button();
             this.zero = new System.Windows.Forms.Button();
             this.resultado = new System.Windows.Forms.Label();
+            this.divisao = new System.Windows.Forms.Button();
+            this.multiplicar = new System.Windows.Forms.Button();
+            this.clear = new System.Windows.Forms.Button();
+            this.apagar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // um
             // 
-            this.um.Location = new System.Drawing.Point(1, 61);
+            this.um.Location = new System.Drawing.Point(2, 199);
             this.um.Name = "um";
             this.um.Size = new System.Drawing.Size(63, 53);
             this.um.TabIndex = 0;
@@ -58,7 +62,7 @@ namespace Calculadora
             // 
             // dois
             // 
-            this.dois.Location = new System.Drawing.Point(61, 61);
+            this.dois.Location = new System.Drawing.Point(62, 199);
             this.dois.Name = "dois";
             this.dois.Size = new System.Drawing.Size(63, 53);
             this.dois.TabIndex = 1;
@@ -68,7 +72,7 @@ namespace Calculadora
             // 
             // tres
             // 
-            this.tres.Location = new System.Drawing.Point(119, 61);
+            this.tres.Location = new System.Drawing.Point(120, 199);
             this.tres.Name = "tres";
             this.tres.Size = new System.Drawing.Size(63, 53);
             this.tres.TabIndex = 2;
@@ -78,7 +82,7 @@ namespace Calculadora
             // 
             // seis
             // 
-            this.seis.Location = new System.Drawing.Point(119, 111);
+            this.seis.Location = new System.Drawing.Point(120, 149);
             this.seis.Name = "seis";
             this.seis.Size = new System.Drawing.Size(63, 53);
             this.seis.TabIndex = 5;
@@ -88,7 +92,7 @@ namespace Calculadora
             // 
             // cinco
             // 
-            this.cinco.Location = new System.Drawing.Point(61, 111);
+            this.cinco.Location = new System.Drawing.Point(62, 149);
             this.cinco.Name = "cinco";
             this.cinco.Size = new System.Drawing.Size(63, 53);
             this.cinco.TabIndex = 4;
@@ -98,7 +102,7 @@ namespace Calculadora
             // 
             // quatro
             // 
-            this.quatro.Location = new System.Drawing.Point(1, 111);
+            this.quatro.Location = new System.Drawing.Point(2, 149);
             this.quatro.Name = "quatro";
             this.quatro.Size = new System.Drawing.Size(63, 53);
             this.quatro.TabIndex = 3;
@@ -108,7 +112,7 @@ namespace Calculadora
             // 
             // nove
             // 
-            this.nove.Location = new System.Drawing.Point(119, 161);
+            this.nove.Location = new System.Drawing.Point(120, 99);
             this.nove.Name = "nove";
             this.nove.Size = new System.Drawing.Size(63, 53);
             this.nove.TabIndex = 8;
@@ -118,7 +122,7 @@ namespace Calculadora
             // 
             // oito
             // 
-            this.oito.Location = new System.Drawing.Point(61, 161);
+            this.oito.Location = new System.Drawing.Point(62, 99);
             this.oito.Name = "oito";
             this.oito.Size = new System.Drawing.Size(63, 53);
             this.oito.TabIndex = 7;
@@ -128,7 +132,7 @@ namespace Calculadora
             // 
             // sete
             // 
-            this.sete.Location = new System.Drawing.Point(1, 161);
+            this.sete.Location = new System.Drawing.Point(2, 99);
             this.sete.Name = "sete";
             this.sete.Size = new System.Drawing.Size(63, 53);
             this.sete.TabIndex = 6;
@@ -139,7 +143,7 @@ namespace Calculadora
             // subtrair
             // 
             this.subtrair.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subtrair.Location = new System.Drawing.Point(179, 111);
+            this.subtrair.Location = new System.Drawing.Point(180, 199);
             this.subtrair.Name = "subtrair";
             this.subtrair.Size = new System.Drawing.Size(63, 53);
             this.subtrair.TabIndex = 9;
@@ -150,7 +154,7 @@ namespace Calculadora
             // adicao
             // 
             this.adicao.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adicao.Location = new System.Drawing.Point(179, 61);
+            this.adicao.Location = new System.Drawing.Point(180, 149);
             this.adicao.Name = "adicao";
             this.adicao.Size = new System.Drawing.Size(63, 53);
             this.adicao.TabIndex = 10;
@@ -163,7 +167,7 @@ namespace Calculadora
             this.igual.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.igual.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.igual.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.igual.Location = new System.Drawing.Point(179, 161);
+            this.igual.Location = new System.Drawing.Point(180, 249);
             this.igual.Name = "igual";
             this.igual.Size = new System.Drawing.Size(63, 53);
             this.igual.TabIndex = 11;
@@ -173,7 +177,7 @@ namespace Calculadora
             // 
             // zero
             // 
-            this.zero.Location = new System.Drawing.Point(61, 210);
+            this.zero.Location = new System.Drawing.Point(61, 249);
             this.zero.Name = "zero";
             this.zero.Size = new System.Drawing.Size(63, 53);
             this.zero.TabIndex = 12;
@@ -191,11 +195,59 @@ namespace Calculadora
             this.resultado.TabIndex = 13;
             this.resultado.Text = "0";
             // 
+            // divisao
+            // 
+            this.divisao.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.divisao.Location = new System.Drawing.Point(180, 49);
+            this.divisao.Name = "divisao";
+            this.divisao.Size = new System.Drawing.Size(63, 53);
+            this.divisao.TabIndex = 14;
+            this.divisao.Text = "÷";
+            this.divisao.UseVisualStyleBackColor = true;
+            this.divisao.Click += new System.EventHandler(this.divisao_Click);
+            // 
+            // multiplicar
+            // 
+            this.multiplicar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.multiplicar.Location = new System.Drawing.Point(180, 99);
+            this.multiplicar.Name = "multiplicar";
+            this.multiplicar.Size = new System.Drawing.Size(63, 53);
+            this.multiplicar.TabIndex = 15;
+            this.multiplicar.Text = "x";
+            this.multiplicar.UseVisualStyleBackColor = true;
+            this.multiplicar.Click += new System.EventHandler(this.multiplicar_Click);
+            // 
+            // clear
+            // 
+            this.clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clear.Location = new System.Drawing.Point(2, 249);
+            this.clear.Name = "clear";
+            this.clear.Size = new System.Drawing.Size(63, 53);
+            this.clear.TabIndex = 16;
+            this.clear.Text = "C";
+            this.clear.UseVisualStyleBackColor = true;
+            this.clear.Click += new System.EventHandler(this.clear_Click);
+            // 
+            // apagar
+            // 
+            this.apagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.apagar.Location = new System.Drawing.Point(120, 249);
+            this.apagar.Name = "apagar";
+            this.apagar.Size = new System.Drawing.Size(63, 53);
+            this.apagar.TabIndex = 17;
+            this.apagar.Text = "⌫";
+            this.apagar.UseVisualStyleBackColor = true;
+            this.apagar.Click += new System.EventHandler(this.apagar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(242, 261);
+            this.ClientSize = new System.Drawing.Size(244, 301);
+            this.Controls.Add(this.apagar);
+            this.Controls.Add(this.clear);
+            this.Controls.Add(this.multiplicar);
+            this.Controls.Add(this.divisao);
             this.Controls.Add(this.resultado);
             this.Controls.Add(this.zero);
             this.Controls.Add(this.igual);
@@ -234,6 +286,10 @@ namespace Calculadora
         private System.Windows.Forms.Button igual;
         private System.Windows.Forms.Button zero;
         private System.Windows.Forms.Label resultado;
+        private System.Windows.Forms.Button divisao;
+        private System.Windows.Forms.Button multiplicar;
+        private System.Windows.Forms.Button clear;
+        private System.Windows.Forms.Button apagar;
     }
 }
 

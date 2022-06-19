@@ -11,7 +11,7 @@ namespace Calculadora
         {
             InitializeComponent();
         }
-        string calc;
+        string calc = "";
         private void um_Click(object sender, EventArgs e)
         {
             calc += "1";
@@ -83,14 +83,54 @@ namespace Calculadora
 
         private void zero_Click(object sender, EventArgs e)
         {
-            calc += "0";
-            resultado.Text = calc;
+            if (!calc.EndsWith("0") && calc.Length > 1)
+            {
+                calc += "0";
+                resultado.Text = calc;
+            }
         }
 
         private void adicao_Click(object sender, EventArgs e)
         {
             calc += "+";
             resultado.Text = calc;
+        }
+
+        private void divisao_Click(object sender, EventArgs e)
+        {
+            calc += "/";
+            resultado.Text = calc;
+        }
+
+        private void multiplicar_Click(object sender, EventArgs e)
+        {
+            calc += "*";
+            resultado.Text = calc;
+        }
+
+        private void clear_Click(object sender, EventArgs e)
+        {
+            calc = "0";
+            resultado.Text = calc;
+        }
+
+        private void apagar_Click(object sender, EventArgs e)
+        {
+            if(calc.Length == 0)
+            {
+                resultado.Text = "0";
+            } else
+            {
+                calc = calc.Substring(0, calc.Length - 1);
+                if (calc.Length == 0)
+                {
+                    resultado.Text = "0";
+                }
+                else
+                {
+                    resultado.Text = calc;
+                }
+            }
         }
     }
 }
